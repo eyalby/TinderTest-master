@@ -1,0 +1,21 @@
+PODS:
+  - SLPagingViewSwift-Swift3 (1.0.0)
+
+DEPENDENCIES:
+  - SLPagingViewSwift-Swift3 (from `https://github.com/davidseek/SLPagingViewSwift-Swift-3-Tinder-Twitter.git`)
+
+EXTERNAL SOURCES:
+  SLPagingViewSwift-Swift3:
+    :git: https://github.com/davidseek/SLPagingViewSwift-Swift-3-Tinder-Twitter.git
+
+CHECKOUT OPTIONS:
+  SLPagingViewSwift-Swift3:
+    :commit: 6314e85721f0bb17217aab16cad3fca2026065a8
+    :git: https://github.com/davidseek/SLPagingViewSwift-Swift-3-Tinder-Twitter.git
+
+SPEC CHECKSUMS:
+  SLPagingViewSwift-Swift3: 52ccbe21930f5700f5eacccafff0a712f57d8d67
+
+PODFILE CHECKSUM: 7dbb2f286230f9015e276f81b16b0e14efa535e7
+
+COCOAPODS: 1.1.0.rc.2
