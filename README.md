@@ -3,15 +3,13 @@ With VC's on storyboard
 
 Full details and description: https://github.com/davidseek/SLPagingViewSwift-Swift-3-Tinder-Twitter
 
-CocoaPods Installation
+Current Issue to be fixed:
 
-CocosPods is the recommended method to install SLPagingView.
+Apart from the 3 VC's of the tinder-like Navigation, i added a UI navigation controller with dismiss button on his root VC to
+show the issue with the layout in ThreeVC which is different before the
+present modally segue and after the  dismiss of the destination VC.
 
-Add the following line to your Podfile:
+download the project to see the issue.
 
-pod 'SLPagingViewSwift-Swift3', :git => 'https://github.com/davidseek/SLPagingViewSwift-Swift-3-Tinder-Twitter.git'
-
-And run : pod install
-
-
+don't forget to start the project with the white icon, the TinderTest.xcworkspace, since the project uses cocoapods.
 
