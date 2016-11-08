@@ -3,7 +3,7 @@ This is a fork of the https://github.com/davidseek/SLPagingViewSwift-Swift-3-Tin
 
 You can find most of the details there and in http://stackoverflow.com/questions/40134450/how-to-create-a-navbar-like-tinders-in-swift-2/40135722?noredirect=1#comment67943469_40135722
 
-In this Fork i want to get to a point that it is easy to embed in a current project (even for a Newbie like me) - that means it have:
+In this Fork i want to get to a point that it is easy to understand how to embed in a current project (even for a Newbie like me) - that means that it have:
 
 * 3 View controllers on the UI Storyboard
 * An initial VC that have a segue to that Tinder-like navigation VC's
