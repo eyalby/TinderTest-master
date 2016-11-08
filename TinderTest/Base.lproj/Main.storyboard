@@ -120,12 +120,76 @@
                     <view key="view" contentMode="scaleToFill" id="hNc-q8-EeH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhd-9h-FdW">
+                                <rect key="frame" x="164" y="60" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="7d4-se-yyV" kind="presentation" id="aTo-wd-wbe"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U3o-gb-oPx">
+                                <rect key="frame" x="0.0" y="98" width="375" height="569"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3FH-ST-xWo" firstAttribute="top" secondItem="U3o-gb-oPx" secondAttribute="bottom" id="9yJ-nP-UD2"/>
+                            <constraint firstItem="U3o-gb-oPx" firstAttribute="leading" secondItem="hNc-q8-EeH" secondAttribute="leading" id="C80-30-JzZ"/>
+                            <constraint firstItem="Uhd-9h-FdW" firstAttribute="top" secondItem="3RV-I1-2q6" secondAttribute="bottom" constant="40" id="MJD-6h-XG9"/>
+                            <constraint firstItem="U3o-gb-oPx" firstAttribute="top" secondItem="Uhd-9h-FdW" secondAttribute="bottom" constant="8" id="RQ2-6m-fBS"/>
+                            <constraint firstItem="Uhd-9h-FdW" firstAttribute="centerX" secondItem="hNc-q8-EeH" secondAttribute="centerX" id="c6n-G7-SFi"/>
+                            <constraint firstAttribute="trailing" secondItem="U3o-gb-oPx" secondAttribute="trailing" id="fya-YU-1AU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="biV-GK-iSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="982" y="179"/>
+            <point key="canvasLocation" x="981.60000000000002" y="178.56071964017991"/>
+        </scene>
+        <!--Destination View Controller-->
+        <scene sceneID="3AE-Cw-LSE">
+            <objects>
+                <viewController id="DDv-JF-04p" customClass="DestinationViewController" customModule="TinderTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6nG-bn-66a"/>
+                        <viewControllerLayoutGuide type="bottom" id="DtT-hU-FAs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZTQ-YT-MvQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DBx-BG-5k2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="qLB-a9-m1O">
+                            <connections>
+                                <action selector="dismissIt:" destination="DDv-JF-04p" id="d4b-M8-jio"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzN-HM-Zu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2914" y="-350"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vWQ-o8-LS4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7d4-se-yyV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HzC-Uh-sea">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DDv-JF-04p" kind="relationship" relationship="rootViewController" id="rOA-Gq-e8U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e21-pu-Zlk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903" y="-370"/>
         </scene>
     </scenes>
 </document>

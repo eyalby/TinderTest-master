@@ -88,9 +88,6 @@ func gradient(_ percent: Double, topX: Double, bottomX: Double, initC: UIColor, 
 // Sets the root
 func setNav() {
     
-    
-    //// implement my logic (if logged in go to... if not go to...)
-    
     instantiateControllers()
     setItems()
     
