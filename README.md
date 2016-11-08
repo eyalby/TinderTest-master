@@ -1,7 +1,7 @@
 # TinderTest-master
 With VC's on storyboard
 
-
+Full details and description: https://github.com/davidseek/SLPagingViewSwift-Swift-3-Tinder-Twitter
 
 CocoaPods Installation
 
@@ -12,3 +12,6 @@ Add the following line to your Podfile:
 pod 'SLPagingViewSwift-Swift3', :git => 'https://github.com/davidseek/SLPagingViewSwift-Swift-3-Tinder-Twitter.git'
 
 And run : pod install
+
+
+
