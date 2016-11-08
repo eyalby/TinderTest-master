@@ -6,25 +6,20 @@
 //  Copyright © 2016 David Seek. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import StoreKit
+import SLPagingViewSwift_Swift3
 
 class OneVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func passData(_ sender: Any) {
+        let oneVCString = "This String is passed from OneVC"
+        twoVC?.theLabel.text = oneVCString
+        controller.setCurrentIndex(1, animated: true)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("one to two:")
-        print(segue.identifier!)
-    }
-
-
 }
 

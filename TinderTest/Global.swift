@@ -16,7 +16,7 @@ let cachedOrange = UIColor(red: 255/255, green: 69.0/255, blue: 0.0/255, alpha: 
 let cachedGray = UIColor(red: 0.84, green: 0.84, blue: 0.84, alpha: 1.0)
 
 var controller: SLPagingViewSwift!
-var nav: MainNavigationController?
+var nav: UINavigationController?
 
 // VCs
 var oneVC: OneVC?
@@ -30,13 +30,9 @@ var profile = UIImage(named: "profile")
 
 // Set VC
 func instantiateControllers()  {
-    twoVC = mainStb.instantiateViewController(withIdentifier: "TwoVC") as? TwoVC
     oneVC = mainStb.instantiateViewController(withIdentifier: "OneVC") as? OneVC
+    twoVC = mainStb.instantiateViewController(withIdentifier: "TwoVC") as? TwoVC
     threeVC = mainStb.instantiateViewController(withIdentifier: "ThreeVC") as? ThreeVC
-    nav = mainStb.instantiateViewController(withIdentifier: "mainNavigationController") as? MainNavigationController
-    
-    
-
 }
 // Set Items
 func setItems() {
@@ -109,9 +105,8 @@ func setNav() {
     controller = SLPagingViewSwift(items: items, controllers: controllers, showPageControl: false)
     
     setupController()
-
     
-    nav = MainNavigationController(rootViewController: controller)
+    nav = UINavigationController(rootViewController: controller)
     appDelegate.window?.rootViewController = nav
     appDelegate.window?.makeKeyAndVisible()
 }

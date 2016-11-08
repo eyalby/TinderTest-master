@@ -42,7 +42,7 @@ open class SLPagingViewSwift: UIViewController, UIScrollViewDelegate {
     fileprivate var navItems: [UIView]          = []
     fileprivate var needToShowPageControl: Bool = false
     fileprivate var isUserInteraction: Bool     = false
-    fileprivate var indexSelected: Int          = 0
+    fileprivate var indexSelected: Int          = 1
     
     // MARK: - Constructors
     public required init(coder decoder: NSCoder) {
@@ -159,8 +159,7 @@ open class SLPagingViewSwift: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.setupPagingProcess()
-        //self.setCurrentIndex(self.indexSelected, animated: false)
-        self.setCurrentIndex(1, animated: false)
+        self.setCurrentIndex(self.indexSelected, animated: false)
     }
     
     open override func viewWillLayoutSubviews() {
