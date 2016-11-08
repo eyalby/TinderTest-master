@@ -7,7 +7,7 @@ In this Fork i want to get to a point that it is easy to understand how to embed
 
 * 3 View controllers on the UI Storyboard
 * An initial VC that have a segue to that Tinder-like navigation VC's
-* Show the concept of passing data between the navigation VC's
+* Show the concept of passing data between the Tinder-like navigation VC's
 * One of the Tinder-like navigation VC's (the third in this project) have a segue to another Navigation VC and we can dismiss it and get back to the Tinder-like navigation VC's 
 
 So far it all works except for the last bullet.
