@@ -12,6 +12,8 @@ In this Fork i want to get to a point that it is easy to embed in a current proj
 
 So far it all works except for the last bullet.
 
+I Explained the issue here: http://stackoverflow.com/questions/40428075/segue-from-a-slpagingviewswift-vc-and-dismiss-the-destination-vc-to-return
+
 Please help to fix this Current Issue:
 
 Apart from the 3 VC's of the tinder-like Navigation, i added a UI navigation controller with dismiss button on his root VC to
